@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(node --check \"e:\\\\Website\\\\Devutty's Birthday\\\\js\\\\main.js\")",
+      "PowerShell(node --check \"e:\\\\Website\\\\Devutty's Birthday\\\\js\\\\config.js\")",
+      "PowerShell($ErrorActionPreference='SilentlyContinue')",
+      "PowerShell(if\\($?\\){ \"main.js OK\" })",
+      "PowerShell(if\\($?\\){ \"config.js OK\" })",
+      "PowerShell(Get-ChildItem \"e:\\\\Website\\\\Devutty's Birthday\" -Recurse -File | Select-Object @{n='File';e={$_.FullName.Replace\\(\"e:\\\\Website\\\\Devutty's Birthday\\\\\",\"\"\\)}}, @{n='KB';e={[math]::Round\\($_.Length/1KB,1\\)}})",
+      "PowerShell(Start-Process \"e:\\\\Website\\\\Devutty's Birthday\\\\index.html\")",
+      "PowerShell(\"Opened in default browser\")",
+      "PowerShell(\"Opened - refresh with Ctrl+F5 if it was already open\")",
+      "PowerShell(\"Opened - press Ctrl+F5 to hard-refresh\")",
+      "PowerShell(Get-ChildItem \"e:\\\\Website\\\\Devutty's Birthday\\\\assets\\\\music\" | Select-Object Name, @{n='KB';e={[math]::Round\\($_.Length/1KB,1\\)}})",
+      "PowerShell(\"Opened - hard-refresh with Ctrl+F5\")",
+      "PowerShell(\"Opened - type 'foxy' on the lock screen to skip the countdown, then Ctrl+F5 if needed\")",
+      "PowerShell(\"Opened - type 'foxy' to skip the lock, then Ctrl+F5 if needed\")"
+    ]
+  }
+}

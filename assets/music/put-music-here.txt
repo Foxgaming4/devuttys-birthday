@@ -1,0 +1,17 @@
+Drop audio files in THIS folder (all optional):
+
+intro.webm  -> background song for the whole site (already added)
+ending.mp3  -> optional song for the surprise ending
+             (if missing, the background song just keeps playing)
+
+Music Corner playlist (the ⏮ ❚❚ ⏭ player):
+song1.mp3   -> song2.mp3 -> song3.mp3 -> song4.mp3
+(rename/point these in js/config.js -> playlist)
+
+The site works fine if some are missing — the player UI,
+vinyl, and ⏭ next button still work, just without sound
+for that track.
+
+Note: .webm audio plays in Chrome / Edge / Firefox. For
+iPhone/Safari add an intro.mp3 too (ask and I'll wire a fallback).
+You can delete this text file.

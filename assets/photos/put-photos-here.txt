@@ -1,0 +1,7 @@
+Drop her photos in THIS folder.
+
+Name them: 1.jpg 2.jpg 3.jpg 4.jpg 5.jpg 6.jpg
+Secret vault: secret1.jpg secret2.jpg
+
+Missing photos show a cute emoji placeholder automatically.
+You can delete this text file.
