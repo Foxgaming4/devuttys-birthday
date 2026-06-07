@@ -44,7 +44,6 @@ window.BIRTHDAY_CONFIG = {
     letter: "I wrote you something. Open the envelope to read it.",
     game: "A little game — collect the diamonds, dodge the creepers.",
     music: "For the music lover. Press play and let it spin.",
-    reasons: "A few of the countless things I adore about you. Tap each one.",
     fortune: "Crack it open — the stars left you a little message."
   },
 
@@ -97,20 +96,6 @@ Happy Birthday, Patty Kunjeeee! 🎉❤️`,
     { title: "song2", src: "assets/music/song2.mp3" },
     { title: "song3", src: "assets/music/song3.mp3" },
     { title: "song4", src: "assets/music/song4.mp3" }
-  ],
-
-  /* ---- Things I love about you (private, from me to her) ---- */
-  reasonsTitle: "Things I Love About You",
-  reasons: [
-    "the way you laugh at your own jokes",
-    "how you always know what to say",
-    "your playlists that live in my head",
-    "the way you care, even when you're tired",
-    "how brave you are without noticing",
-    "our 3 a.m. conversations",
-    "the way you make ordinary days fun",
-    "how you light up a whole room",
-    "just… you, exactly as you are"
   ],
 
   /* ---- Birthday fortune (tap the cookie → a random sweet line) ----

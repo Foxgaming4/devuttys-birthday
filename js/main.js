@@ -2,7 +2,7 @@
    Devika — main.js
    Story-game flow: a centered instruction animates in, then the
    section reveals. Synth sound, fireworks, LED lights, floating
-   stickers, flip-card "things I love", gentle secret (no password).
+   stickers, birthday fortune, and a story-game scene flow.
    ============================================================ */
 (function () {
   "use strict";
@@ -290,7 +290,7 @@
     if (started) return; started = true;
     buildAmbience();
     buildHero(); buildGallery(); buildCake(); buildLetter(); buildGame();
-    buildMusic(); buildReasons(); buildFortune(); buildEnding();
+    buildMusic(); buildFortune(); buildEnding();
     setupControls(); setupEasterEggs(); startRandomMessages();
     initScenes();
     confettiSoft({ particleCount: 60, spread: 70 });
@@ -609,25 +609,6 @@
     setInterval(() => { if (!vinyl.classList.contains("playing")) return;
       const n = document.createElement("div"); n.className = "note"; n.textContent = ["♪", "♫", "♬"][(Math.random() * 3) | 0];
       n.style.left = rand(42, 66) + "%"; n.style.top = "32%"; notes.appendChild(n); setTimeout(() => n.remove(), 3000); }, 620);
-  }
-
-  /* ========================================================
-     THINGS I LOVE — flip cards
-     ======================================================== */
-  function buildReasons() {
-    if ($("#reasons-title")) $("#reasons-title").textContent = CFG.reasonsTitle || "Things I Love About You";
-    const grid = $("#reasons-grid");
-    (CFG.reasons || []).forEach(r => {
-      const card = document.createElement("button"); card.className = "rcard";
-      card.innerHTML = `<div class="rcard-inner">
-        <div class="rface rfront"><img src="${PNG}pink_hearts.png" alt=""></div>
-        <div class="rface rback">${esc(r)}</div></div>`;
-      card.addEventListener("click", () => {
-        const flipped = card.classList.toggle("flipped"); Sound.sparkle();
-        if (flipped) { const b = card.getBoundingClientRect(); burstHearts(b.left + b.width / 2, b.top + b.height / 2); }
-      });
-      grid.appendChild(card);
-    });
   }
 
   /* ========================================================
